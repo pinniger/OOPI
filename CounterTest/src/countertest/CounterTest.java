@@ -15,14 +15,14 @@ public class CounterTest {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Counter counter1 = new Counter();        
-        Counter counter2 = new Counter();
         
+        Counter counter1 = new Counter();                
         counter1.click();
         counter1.click();
         counter1.click();
         System.out.println("counter 1 has " + counter1.getCount() + " clicks");
         
+        Counter counter2 = new Counter();
         counter2.click();
         counter2.click();
         counter2.click();
@@ -33,8 +33,7 @@ public class CounterTest {
         System.out.println("counter 1 has been reset and now has " + counter1.getCount() + " clicks");
         
         counter2.reset();
-        System.out.println("counter 2 has been reset and now has " + counter2.getCount() + " clicks");
-        
+        System.out.println("counter 2 has been reset and now has " + counter2.getCount() + " clicks");        
     }
     
 }
