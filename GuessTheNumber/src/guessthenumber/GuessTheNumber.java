@@ -21,6 +21,9 @@ public class GuessTheNumber {
         int input, numberOfTries, secretNumber;
         Scanner scan = new Scanner(System.in);
         Random randomNumber = new Random();
+        Integer ageObj = new Integer(40);
+        ageObj++;
+        
         while (true) {
             System.out.print("Enter an integer from 1-100 (0 to quit): ");
             input = scan.nextInt();                    
